@@ -207,9 +207,11 @@ The pipeline performs these stages:
 
 
 
-## tomcat setup
+## Tomcat setup
 
 - Go to Jenkins Dashboard and install the plugin named ssh-agent.
+
+![image alt](https://github.com/Akshata-M09/Jenkins-Pipeline-Project/blob/3cc35c3d29009a50e1b26323c5fe83a9607ffe4c/ss/tomcat/Screenshot%20(975).png)
 
 - Navigate to Manage Jenkins → Credentials.
 
@@ -232,6 +234,8 @@ The pipeline performs these stages:
 - Ensure the credentials are selected automatically, then copy the generated syntax.
 
 - Paste the syntax inside the Tomcat deployment stage.
+
+![image alt](https://github.com/Akshata-M09/Jenkins-Pipeline-Project/blob/3cc35c3d29009a50e1b26323c5fe83a9607ffe4c/ss/tomcat/Screenshot%20(983).png)
 
 - Add an scp command to copy the petclinic.war file from Jenkins to the Tomcat server.
 
@@ -256,6 +260,10 @@ Example
 
   - Click Save, then Build Now and ensure the build completes successfully.
 
+  ![image alt](https://github.com/Akshata-M09/Jenkins-Pipeline-Project/blob/3cc35c3d29009a50e1b26323c5fe83a9607ffe4c/ss/tomcat/Screenshot%20(976).png)
+
   -  Access the application:
 
          http://<tomcat_public_ip>:8080/petclinic
+
+  ![image alt](https://github.com/Akshata-M09/Jenkins-Pipeline-Project/blob/3cc35c3d29009a50e1b26323c5fe83a9607ffe4c/ss/tomcat/Screenshot%20(978).png)       
